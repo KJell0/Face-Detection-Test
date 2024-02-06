@@ -11,6 +11,6 @@ faces = face_cascade.detectMultiScale(gray, 1.1, 4)
 for (x, y, w, h) in faces:
     cv2.rectangle(image, (x, y), (x + w, y + h), (0, 0, 255), 2)
 
-
+#display
 cv2.imshow('img', image)
 cv2.waitKey()
